@@ -1,6 +1,7 @@
 @extends('layouts.app')
-@section('content')
+@extends('scripts.scripts')
 
+@section('content')
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -557,7 +558,7 @@ button:hover {
     <div style="float:right;">
       <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
       <button class="btn btn-primary" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-      <button class="btn btn-primary" type="button" id="nextBtn2" onclick="nextPrev(1)">Create Lesson</button>
+      <a href="{{ url('/create-lesson2') }}" class="btn btn-primary medium" type="button" id="nextBtn2">Create Lesson</a>
     </div>
   </div>
   <!-- Circles which indicates the steps of the form: -->
@@ -593,8 +594,9 @@ function showTab(n) {
     document.getElementById("nextBtn").innerHTML = "Submit";
     
   } else if(n == (x.length - 1 )){
-    document.getElementById("nextBtn").innerHTML = "Create Lesson";
-    
+   
+    document.getElementById("nextBtn2").style.display = "inline";
+    document.getElementById("nextBtn").style.display = "none";
   }
   
   else {

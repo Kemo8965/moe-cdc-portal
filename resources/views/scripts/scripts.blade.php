@@ -358,4 +358,21 @@ function g10Dashboard() {
             }
         })
     }
+
+    function createLesson() {
+        event.preventDefault();
+        const CSRF_TOKEN = $('meta[name = "crsf-token"]').attr('content');
+
+        $.ajax({
+            url: "/create-lesson2",
+            type: 'get',
+            data: {
+                CSRF_TOKEN
+            },
+            success: function(data) {
+                console.log(data)
+                $("#content").html(data)
+            }
+        })
+    }
 </script>

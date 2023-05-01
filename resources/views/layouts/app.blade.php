@@ -38,6 +38,22 @@
         <!-- App Css-->
         <link href="assets/auth/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
         {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}} 
+
+                <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+
+        <!-- Bootstrap Form Repeater CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-form-repeater/dist/bootstrap-form-repeater.min.css">
+
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+        <!-- Bootstrap Form Repeater JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap-form-repeater/dist/bootstrap-form-repeater.min.js"></script>
+
     </head>
     <body data-topbar="dark">
 

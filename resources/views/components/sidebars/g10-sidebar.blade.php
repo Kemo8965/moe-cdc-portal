@@ -49,7 +49,7 @@
 
 <ul class="sub-menu" aria-expanded="true">
    <li>
-       <a href="javascript: void(0);"><i class="ri  ri-compass-3-fill"></i>Initialize Lesson</a>
+       <a href="{{ url('/initialize-lesson') }}"><i class="ri  ri-compass-3-fill"></i>Initialize Lesson</a>
       
    </li>
 

@@ -43,6 +43,10 @@ Route::group(['namespace' => 'App\Http\Controllers'], function(){
         Route::get('/create-lesson2', function(){
             return view('components.lessons.create-lesson2');
         });
+
+        Route::get('/create-lesson3', function(){
+            return view('components.lessons.create-lesson3');
+        });
     });
 
     Route::group(['prefix' => 'users'], function() {
