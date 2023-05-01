@@ -371,75 +371,7 @@ button:hover {
 </div>
   </div>
 
-  <div class="tab">Lesson Number
-  <div class="mb-3">
-                                
-<select class="form-control select2">
-    <option>Select Lesson Number</option>
-    <optgroup label="Alaskan/Hawaiian Time Zone">
-        <option value="AK">Alaska</option>
-        <option value="HI">Hawaii</option>
-    </optgroup>
-    <optgroup label="Pacific Time Zone">
-        <option value="CA">California</option>
-        <option value="NV">Nevada</option>
-        <option value="OR">Oregon</option>
-        <option value="WA">Washington</option>
-    </optgroup>
-    <optgroup label="Mountain Time Zone">
-        <option value="AZ">Arizona</option>
-        <option value="CO">Colorado</option>
-        <option value="ID">Idaho</option>
-        <option value="MT">Montana</option>
-        <option value="NE">Nebraska</option>
-        <option value="NM">New Mexico</option>
-        <option value="ND">North Dakota</option>
-        <option value="UT">Utah</option>
-        <option value="WY">Wyoming</option>
-    </optgroup>
-    <optgroup label="Central Time Zone">
-        <option value="AL">Alabama</option>
-        <option value="AR">Arkansas</option>
-        <option value="IL">Illinois</option>
-        <option value="IA">Iowa</option>
-        <option value="KS">Kansas</option>
-        <option value="KY">Kentucky</option>
-        <option value="LA">Louisiana</option>
-        <option value="MN">Minnesota</option>
-        <option value="MS">Mississippi</option>
-        <option value="MO">Missouri</option>
-        <option value="OK">Oklahoma</option>
-        <option value="SD">South Dakota</option>
-        <option value="TX">Texas</option>
-        <option value="TN">Tennessee</option>
-        <option value="WI">Wisconsin</option>
-    </optgroup>
-    <optgroup label="Eastern Time Zone">
-        <option value="CT">Connecticut</option>
-        <option value="DE">Delaware</option>
-        <option value="FL">Florida</option>
-        <option value="GA">Georgia</option>
-        <option value="IN">Indiana</option>
-        <option value="ME">Maine</option>
-        <option value="MD">Maryland</option>
-        <option value="MA">Massachusetts</option>
-        <option value="MI">Michigan</option>
-        <option value="NH">New Hampshire</option>
-        <option value="NJ">New Jersey</option>
-        <option value="NY">New York</option>
-        <option value="NC">North Carolina</option>
-        <option value="OH">Ohio</option>
-        <option value="PA">Pennsylvania</option>
-        <option value="RI">Rhode Island</option>
-        <option value="SC">South Carolina</option>
-        <option value="VT">Vermont</option>
-        <option value="VA">Virginia</option>
-        <option value="WV">West Virginia</option>
-    </optgroup>
-</select>
-
-</div>
-  </div>
+ 
 
   <div class="tab">Existing Lesson
   <div class="mb-3">
@@ -522,15 +454,85 @@ button:hover {
         </div>
     </div>
 
+    <div class="tab">Lesson Number
+  <div class="mb-3">
+                                
+<select class="form-control select2">
+    <option>Select Lesson Number</option>
+    <optgroup label="Alaskan/Hawaiian Time Zone">
+        <option value="AK">Alaska</option>
+        <option value="HI">Hawaii</option>
+    </optgroup>
+    <optgroup label="Pacific Time Zone">
+        <option value="CA">California</option>
+        <option value="NV">Nevada</option>
+        <option value="OR">Oregon</option>
+        <option value="WA">Washington</option>
+    </optgroup>
+    <optgroup label="Mountain Time Zone">
+        <option value="AZ">Arizona</option>
+        <option value="CO">Colorado</option>
+        <option value="ID">Idaho</option>
+        <option value="MT">Montana</option>
+        <option value="NE">Nebraska</option>
+        <option value="NM">New Mexico</option>
+        <option value="ND">North Dakota</option>
+        <option value="UT">Utah</option>
+        <option value="WY">Wyoming</option>
+    </optgroup>
+    <optgroup label="Central Time Zone">
+        <option value="AL">Alabama</option>
+        <option value="AR">Arkansas</option>
+        <option value="IL">Illinois</option>
+        <option value="IA">Iowa</option>
+        <option value="KS">Kansas</option>
+        <option value="KY">Kentucky</option>
+        <option value="LA">Louisiana</option>
+        <option value="MN">Minnesota</option>
+        <option value="MS">Mississippi</option>
+        <option value="MO">Missouri</option>
+        <option value="OK">Oklahoma</option>
+        <option value="SD">South Dakota</option>
+        <option value="TX">Texas</option>
+        <option value="TN">Tennessee</option>
+        <option value="WI">Wisconsin</option>
+    </optgroup>
+    <optgroup label="Eastern Time Zone">
+        <option value="CT">Connecticut</option>
+        <option value="DE">Delaware</option>
+        <option value="FL">Florida</option>
+        <option value="GA">Georgia</option>
+        <option value="IN">Indiana</option>
+        <option value="ME">Maine</option>
+        <option value="MD">Maryland</option>
+        <option value="MA">Massachusetts</option>
+        <option value="MI">Michigan</option>
+        <option value="NH">New Hampshire</option>
+        <option value="NJ">New Jersey</option>
+        <option value="NY">New York</option>
+        <option value="NC">North Carolina</option>
+        <option value="OH">Ohio</option>
+        <option value="PA">Pennsylvania</option>
+        <option value="RI">Rhode Island</option>
+        <option value="SC">South Carolina</option>
+        <option value="VT">Vermont</option>
+        <option value="VA">Virginia</option>
+        <option value="WV">West Virginia</option>
+    </optgroup>
+</select>
+
+</div>
+  </div>
+
 
   <div class="tab">Confirm Details
   <div class="mb-3">
     <div class="text-center">
         <div class="mb-4">
-            <i class="mdi mdi-bookmark-check display-4"></i>
+            <i class="mdi mdi-bookmark-check text-success display-4"></i>
         </div>
         <div>
-            <h5>Confirm Detail</h5>
+            <h5>Confirm Details</h5>
             <p class="text-muted">Confirm lesson details here</p>
         </div>
         </div>
@@ -544,8 +546,8 @@ button:hover {
             <i class="mdi mdi-check-circle-outline text-success display-4"></i>
         </div>
         <div>
-            <h5>Successfully created a lesson!</h5>
-            <p class="text-muted">Confirm lesson details here</p>
+            <h5>Successfully initialized a lesson!</h5>
+            <p class="text-muted">Proceed to create a lesson </p>
         </div>
         </div>
         </div>
@@ -555,6 +557,7 @@ button:hover {
     <div style="float:right;">
       <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
       <button class="btn btn-primary" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+      <button class="btn btn-primary" type="button" id="nextBtn2" onclick="nextPrev(1)">Create Lesson</button>
     </div>
   </div>
   <!-- Circles which indicates the steps of the form: -->
@@ -582,12 +585,19 @@ function showTab(n) {
   //... and fix the Previous/Next buttons:
   if (n == 0) {
     document.getElementById("prevBtn").style.display = "none";
+    document.getElementById("nextBtn2").style.display = "none";
   } else {
     document.getElementById("prevBtn").style.display = "inline";
   }
-  if (n == (x.length - 1)) {
+  if (n == (x.length - 2)) {
     document.getElementById("nextBtn").innerHTML = "Submit";
-  } else {
+    
+  } else if(n == (x.length - 1 )){
+    document.getElementById("nextBtn").innerHTML = "Create Lesson";
+    
+  }
+  
+  else {
     document.getElementById("nextBtn").innerHTML = "Next";
   }
   //... and run a function that will display the correct step indicator:
