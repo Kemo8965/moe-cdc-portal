@@ -17,7 +17,7 @@
                 </span>
                 <span class="logo-lg elp">
                     <img src="assets/auth/images/coa.png" alt="logo-light" height="25">
-                    eLearners Portal
+                    Content Platform
                 </span>
 
               
@@ -30,10 +30,10 @@
 
         <!-- App Search-->
         <form class="app-search d-none d-lg-block">
-            <div class="position-relative">
+            <!-- <div class="position-relative">
                 <input type="text" class="form-control" placeholder="Search...">
                 <span class="ri-search-line"></span>
-            </div>
+            </div> -->
         </form>
 
         <div class="dropdown dropdown-mega d-none d-lg-block ms-2">

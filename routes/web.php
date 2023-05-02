@@ -47,6 +47,14 @@ Route::group(['namespace' => 'App\Http\Controllers'], function(){
         Route::get('/create-lesson3', function(){
             return view('components.lessons.create-lesson3');
         });
+
+        Route::get('/view-lesson', function(){
+            return view('components.lessons.view-lesson');
+        });
+
+        Route::get('/view-lesson2', function(){
+            return view('components.lessons.view-lesson2');
+        });
     });
 
     Route::group(['prefix' => 'users'], function() {

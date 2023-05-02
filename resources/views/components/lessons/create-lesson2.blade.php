@@ -97,27 +97,6 @@
         <form id="regForm" action="#">
             <h2>Create a lesson for lesson_title </h2>
             <!-- One "tab" for each step in the form: -->
-            <div class="tab">Lesson Title
-                <div class="mb-3">
-
-                    <select class="form-control select2">
-                        <option>Lesson Title Display</option>
-                        <optgroup label="Alaskan/Hawaiian Time Zone">
-                            <option value="AK">Alaska</option>
-                            <option value="HI">Hawaii</option>
-                        </optgroup>
-                        <optgroup label="Pacific Time Zone">
-                            <option value="CA">California</option>
-                            <option value="NV">Nevada</option>
-                            <option value="OR">Oregon</option>
-                            <option value="WA">Washington</option>
-                        </optgroup>
-
-                    </select>
-
-                </div>
-            </div>
-
 
             <div class="tab">Rationale
                 <div class="row mb-2">
@@ -259,12 +238,12 @@
                 <div style="float:right;">
                     <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
                     <button class="btn btn-primary" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-                    <a href="{{ url('/create-lesson2') }}" class="btn btn-primary medium" type="button" id="nextBtn2">View Lessons</a>
+                    <a href="{{ url('/view-lesson') }}" class="btn btn-primary medium" type="button" id="nextBtn2">View Lessons</a>
                 </div>
             </div>
             <!-- Circles which indicates the steps of the form: -->
-            <div style="text-align:center;margin-top:40px;">
-                <span class="step"></span>
+            <div style="text-align:center; margin-top:40px;">
+                
                 <span class="step"></span>
                 <span class="step"></span>
                 <span class="step"></span>

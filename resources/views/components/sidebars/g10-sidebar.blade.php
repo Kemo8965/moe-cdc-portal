@@ -54,12 +54,12 @@
    </li>
 
    <li>
-       <a href="javascript: void(0);"><i class="ri  ri-ball-pen-line"></i>Create Lesson</a>
+       <a href="{{ url('/create-lesson2') }}"><i class="ri  ri-ball-pen-line"></i>Create Lesson</a>
       
    </li>
 
    <li>
-       <a href="javascript: void(0);"><i class="ri  ri-compass-3-fill"></i>View Lessons</a>
+       <a href="{{ url('/view-lesson') }}"><i class="ri  ri-compass-3-fill"></i>View Lessons</a>
       
    </li>
 
