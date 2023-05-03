@@ -103,22 +103,22 @@
     
                 <div class="page-content">
                     <div class="container-fluid">
-                    <div id="loading-overlay" class="d-none text-center" style="margin-top: 15rem;">
-                    <div class="spinner-grow text-info m-1" role="status">
-                        <span class="sr-only">Loading...</span>
-                    </div>
+                        <div id="loading-overlay" class="d-none text-center" style="margin-top: 15rem;">
+                            <div class="spinner-grow text-info m-1" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
 
-                    <div class="spinner-grow text-success m-1" role="status">
-                        <span class="sr-only">Loading...</span>
-                    </div>
+                            <div class="spinner-grow text-success m-1" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
 
-                    <div class="spinner-grow text-danger m-1" role="status">
+                        <div class="spinner-grow text-danger m-1" role="status">
                         <span class="sr-only">Loading...</span>
                     </div>
 
                     
 
-                    </div>
+                </div>
 
                     
     
@@ -150,6 +150,16 @@
             <script src="assets/auth/libs/metismenu/metisMenu.min.js"></script>
             <script src="assets/auth/libs/simplebar/simplebar.min.js"></script>
             <script src="assets/auth/libs/node-waves/waves.min.js"></script>
+
+            
+
+
+            <!--tinymce js-->
+            <script src="assets/auth/libs/tinymce/tinymce.min.js"></script>
+
+            <!-- init js -->
+            <script src="assets/auth/js/pages/form-editor.init.js"></script>
+
 
              <!-- Plugins css -->
             <link href="assets/auth/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
@@ -187,13 +197,24 @@
             <!-- add this to create a JavaScript script block to show/hide the spinner -->
             <script>
             $(document).ready(function() {
+
+               
                 // show the spinner on page load
                 $('#loading-overlay').removeClass('d-none');
+                
+                const spinner = document.querySelector('.spinner-grow');
+                // Wait for 5 seconds before hiding the spinner
+                setTimeout(() => {
+                    spinner.style.display = 'none';
+                }, 3000);
+
+
+                
 
                 // hide the spinner after a short delay (e.g. 500ms)
                 setTimeout(function() {
                 $('#loading-overlay').addClass('d-none');
-                }, 500);
+                }, 2800);
             });
             </script>
 
@@ -204,7 +225,7 @@
                 setTimeout(function() {
                 // Show the page content by setting its display property to 'block'
                 document.getElementById("page-content").style.display = "block";
-                }, 200);
+                }, 3100);
             };
             </script>
     </body>

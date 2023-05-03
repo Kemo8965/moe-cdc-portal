@@ -54,7 +54,7 @@
    </li>
 
    <li>
-       <a href="#" onclick="loading()" ><i class="ri  ri-ball-pen-line"></i>Create Lesson</a>
+       <a href="{{ url('/create-lesson2') }}"><i class="ri  ri-ball-pen-line"></i>Create Lesson</a>
       
    </li>
 

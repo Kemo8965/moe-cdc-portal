@@ -33,35 +33,39 @@ Route::group(['namespace' => 'App\Http\Controllers'], function(){
         Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
         Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
         Route::get('/initialize-lesson', function(){
-            return view('components.lessons.initialize-lesson');
+            return view('components.lessons.initialize.initialize-lesson');
         });
 
         Route::get('/create-lesson', function(){
-            return view('components.lessons.create-lesson');
+            return view('components.lessons.create.create-lesson');
         });
 
         Route::get('/create-lesson2', function(){
-            return view('components.lessons.create-lesson2');
+            return view('components.lessons.create.create-lesson2');
         });
 
         Route::get('/create-lesson3', function(){
-            return view('components.lessons.create-lesson3');
+            return view('components.lessons.create.create-lesson3');
         });
 
         Route::get('/view-lesson', function(){
-            return view('components.lessons.view-lesson');
+            return view('components.lessons.view.view-lesson');
         });
 
         Route::get('/view-lesson2', function(){
-            return view('components.lessons.view-lesson2');
+            return view('components.lessons.view.view-lesson2');
         });
 
         Route::get('/view-lesson3', function(){
-            return view('components.lessons.view-lesson3');
+            return view('components.lessons.view.view-lesson3');
         });
 
         Route::get('/spinner', function(){
             return view('components.spinners.spinner');
+        });
+
+        Route::get('/preview-lesson', function(){
+            return view('components.lessons.preview.preview-lesson');
         });
     });
 

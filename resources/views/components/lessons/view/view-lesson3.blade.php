@@ -117,7 +117,7 @@
     
     
     const link1 = document.createElement('a');
-    link1.href ='/create-lesson2';
+    link1.href ='/preview-lesson';
     link1.textContent='preview';
     link1.style.color='white';
     button1.appendChild(link1);
@@ -211,6 +211,7 @@
 
 .preview:hover{
     background-color:darkcyan;
+
     
     
 }
