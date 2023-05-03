@@ -86,7 +86,8 @@ button:hover {
 }
 </style>
 <body>
-
+<div id="page-content" style="display:none;">
+  
 <form id="regForm" action="#">
   <h1>Initialize a lesson</h1>
   <!-- One "tab" for each step in the form: -->
@@ -574,6 +575,7 @@ button:hover {
     <span class="step"></span>
   </div>
 </form>
+</div>
 
 <script>
 var currentTab = 0; // Current tab is set to be the first tab (0)

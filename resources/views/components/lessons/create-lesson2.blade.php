@@ -93,7 +93,7 @@
 
 <body>
 
-    <div>
+    <div id="page-content" style="display:none;">
         <form id="regForm" action="#">
             <h2>Create a lesson for lesson_title </h2>
             <!-- One "tab" for each step in the form: -->

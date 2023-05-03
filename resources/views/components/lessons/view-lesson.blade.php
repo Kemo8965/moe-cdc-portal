@@ -1,16 +1,14 @@
 @extends('layouts.app')
 @section('content')
 
-<div class="row">
+<div id="page-content" style="display:none;" class="row">
 <div class="col-12">
 <div class="card">
 <div class="card-body">
 
     <h4 class="card-title">Lessons</h4>
-    <p class="card-title-desc">DataTables has most features enabled by
-        default, so all you need to do to use it with your own tables is to call
-        the construction function: <code>$().DataTable();</code>.
-    </p>
+    
+   
 <table class="table  table-bordered dt-responsive nowrap" id="datatable" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
 <thead>
     <tr>
@@ -74,7 +72,7 @@
 
 <script>
 $(document).ready(function() {
-    $('#datatable').DataTable({
+    $('#page-content').DataTable({
         "paging": true, // enable pagination
         "pageLength": 10, // set number of rows per page
         "lengthMenu": [ [10, 25, 50, -1], [10, 25, 50, "All"] ], // add show entries dropdown

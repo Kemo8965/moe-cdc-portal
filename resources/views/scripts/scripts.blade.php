@@ -1,3 +1,20 @@
+
+<script>
+  // show the spinner when the page starts loading
+  function loading(){
+    window.addEventListener('load', function() {
+    document.getElementById('loading-spinner').classList.remove('d-none');
+  });
+
+  // hide the spinner when the page finishes loading
+  window.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('loading-spinner').classList.add('d-none');
+  });
+  }
+</script>
+
+
+
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" 
 integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
 crossorigin="anonymous">

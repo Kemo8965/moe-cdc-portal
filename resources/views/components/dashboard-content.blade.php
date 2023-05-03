@@ -1,3 +1,5 @@
+@extends('scripts.scripts')
+
 <div class="row">
 <div class="col-xl-6">
     <div class="card">
@@ -5,6 +7,8 @@
 
             <h4 class="card-title">Digital Content Platform</h4>
             <p class="card-title-desc">Welcome to the Digital Content Platform</p>
+
+            
 
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
                 <div class="carousel-inner" role="listbox">

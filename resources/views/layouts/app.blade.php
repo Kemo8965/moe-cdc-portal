@@ -56,14 +56,14 @@
         <!-- Bootstrap Form Repeater JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap-form-repeater/dist/bootstrap-form-repeater.min.js"></script>
 
-         <!-- DataTables -->
-         <link href="assets/auth/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <!-- DataTables -->
+        <link href="assets/auth/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/auth/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/auth/libs/datatables.net-select-bs4/css//select.bootstrap4.min.css" rel="stylesheet" type="text/css" />
 
+        <!-- Responsive datatable examples -->
+        <link href="assets/auth/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />     
 
-         <!-- Responsive datatable examples -->
-         <link href="assets/auth/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />  
     </head>
     <body data-topbar="dark">
 
@@ -91,7 +91,10 @@
             </div>
             <!-- Left Sidebar End -->
     
-    
+            
+
+
+
     
             <!-- ============================================================== -->
             <!-- Start right Content here -->
@@ -100,6 +103,24 @@
     
                 <div class="page-content">
                     <div class="container-fluid">
+                    <div id="loading-overlay" class="d-none text-center" style="margin-top: 15rem;">
+                    <div class="spinner-grow text-info m-1" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+
+                    <div class="spinner-grow text-success m-1" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+
+                    <div class="spinner-grow text-danger m-1" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+
+                    
+
+                    </div>
+
+                    
     
                     @yield('content')
     
@@ -163,6 +184,28 @@
     
             <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     
-            
+            <!-- add this to create a JavaScript script block to show/hide the spinner -->
+            <script>
+            $(document).ready(function() {
+                // show the spinner on page load
+                $('#loading-overlay').removeClass('d-none');
+
+                // hide the spinner after a short delay (e.g. 500ms)
+                setTimeout(function() {
+                $('#loading-overlay').addClass('d-none');
+                }, 500);
+            });
+            </script>
+
+            <script>
+            // Wait for the page to load
+            window.onload = function() {
+                // Set a timeout of 5 seconds (5000 milliseconds)
+                setTimeout(function() {
+                // Show the page content by setting its display property to 'block'
+                document.getElementById("page-content").style.display = "block";
+                }, 200);
+            };
+            </script>
     </body>
 </html>
