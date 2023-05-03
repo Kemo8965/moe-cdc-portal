@@ -14,7 +14,7 @@
         background-color: #f1f1f1;
     }
 
-    .regForm, .regForm1, .regForm2, .regForm3 {
+    regForm {
         background-color: #ffffff;
         margin: 50px auto;
         font-family: Raleway;
@@ -22,6 +22,16 @@
         width: 90%;
         min-width: 200px;
     }
+
+    .regForm {
+        background-color: #ffffff;
+        margin: 50px auto;
+        font-family: Raleway;
+        padding: 10px;
+        width: 90%;
+        min-width: 200px;
+    }
+
 
     
 
@@ -61,12 +71,18 @@
         opacity: 0.8;
     }
 
-    prevBtn {
+    .prevBtn {
         background-color: #bbbbba;
     }
 
-    nextBtn {
-        margin-right: 2rem;
+    .nextBtn {
+        margin-right: 4rem;
+    }
+
+    .text-area{
+        padding-left: 8rem;
+        padding-right: 8rem;
+        
     }
 
     /* Make circles that indicate the steps of the form: */
@@ -102,8 +118,8 @@
     <div id="page-content" style="display:none;">
        <div class="card">
         <div class="card-content">
-            <form class="regForm">
-                <form class="regForm1" action="#">
+            <form class="regForm" >
+                <form  id="regForm1" action="#">
                     <h2>Create a lesson for lesson_title </h2>
                     <!-- One "tab" for each step in the form: -->
         
@@ -112,7 +128,7 @@
         
                             @include('components.file-upload')
         
-                            <textarea placeholder="rationale here..."></textarea>
+                            <textarea class="text-area" placeholder="rationale here..."></textarea>
         
                         </div>
                     </div>
@@ -120,35 +136,35 @@
                 </form>
         
         
-                <form class="regForm2" action="#">
+                <form  id="regForm2" action="#">
                     <div class="tab">Introduction
                         <div class="row mb-2">
         
         
                             @include('components.file-upload')
         
-                            <textarea placeholder="introduction here..."></textarea>
+                            <textarea class="text-area" placeholder="introduction here..."></textarea>
         
                         </div>
                     </div>
         
                 </form>
         
-                <form class="regForm3" action="#">
+                <form  id="regForm3" action="#">
                     <div class="tab"><i class="ri ri-lightbulb-flash-fill text-yellow"></i>Tip
                         <div class="row mb-2">
         
         
                             @include('components.file-upload')
         
-                            <textarea placeholder="tip here..."></textarea>
+                            <textarea class="text-area" placeholder="tip here..."></textarea>
         
                         </div>
                     </div>
         
                 </form>
                 
-                <form id="regForm4" action="#">
+                <form  id="regForm4" action="#">
                     <div class="tab">Lesson Development. This section makes provision for 
                                     upto 3 lesson sections involving media files and text grouped together 
                         <div class="row mb-2">
@@ -157,7 +173,7 @@
                             @include('components.file-upload')
         
         
-                            <textarea placeholder="lesson development here..."></textarea>
+                            <textarea class="text-area" placeholder="lesson development here..."></textarea>
         
                         </div>
         
@@ -166,14 +182,14 @@
         
                 </form>
         
-                <form id="regForm5" action="#">
+                <form  id="regForm5" action="#">
                     <div class="tab">Practical Activities
                         <div class="row mb-2">
         
         
                             @include('components.file-upload')
         
-                            <textarea placeholder="practical activities here..."></textarea>
+                            <textarea class="text-area" placeholder="practical activities here..."></textarea>
         
                         </div>
                     </div>
@@ -181,7 +197,7 @@
                 </form>
         
         
-                <form id="regForm6" action="#">
+                <form  id="regForm6" action="#">
                     <div class="tab">Exercise
                         <div class="row mb-2">
         
@@ -196,13 +212,13 @@
                 </form>
         
         
-                <form id="regForm7" action="#">
+                <form  id="regForm7" action="#">
                     <div class="tab">Summary
                         
                         <div class="row mb-2">     
                         
                             @include('components.file-upload')
-                            <textarea placeholder="Summary here..."></textarea>
+                            <textarea class="text-area" placeholder="Summary here..."></textarea>
         
                         </div>
                     </div>
@@ -210,19 +226,19 @@
                 </form>
         
         
-                <form id="regForm8" action="#">
+                <form  id="regForm8" action="#">
                     <div class="tab">References
                         
                     <div class="row mb-2">     
                        
-                        <textarea placeholder="References here..."></textarea>
+                        <textarea class="text-area" placeholder="References here..."></textarea>
         
                     </div>
                     </div>
                 
                 </form>
         
-                <form id="regForm9" action="#">
+                <form  id="regForm9" action="#">
         
                     <div class="tab">Confirm Details
                         <div class="mb-3">
@@ -241,7 +257,7 @@
                 </form>
         
         
-                <form id="regForm10" action="#">
+                <form  id="regForm10" action="#">
                     <div class="tab">Success
                         <div class="mb-3">
                             <div class="text-center">
@@ -259,8 +275,8 @@
         
                     <div style="overflow:auto;">
                         <div style="float:right;">
-                            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                            <button class="btn btn-primary" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                            <button type="button" class="prevBtn" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                            <button class="btn btn-primary nextBtn" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
                             <a href="{{ url('/view-lesson') }}" class="btn btn-primary medium" type="button" id="nextBtn2">View Lessons</a>
                         </div>
                     </div>
