@@ -22,6 +22,13 @@
 
     </head>
     <body>
+
+    <div id="page-content" style="display:none;" class="row">
+    <div class="col-12">
+    <div class="card">
+    <div class="card-body">
+
+    <h4 class="card-title">Lessons</h4>
     <table id="example" class="table table-striped table-bordered">
         <thead>
             <tr>
@@ -33,6 +40,10 @@
         <tbody id="table-body">
         </tbody>
     </table>
+    </div>
+    </div>
+    </div>
+    </div>
 
         
         <script src="" async defer></script>
@@ -199,7 +210,8 @@
 }
 
 .preview:hover{
-    background-color:aquamarine;
+    background-color:darkcyan;
+    
     
 }
 
